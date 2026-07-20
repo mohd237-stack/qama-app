@@ -1,3 +1,15 @@
+/
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/reports.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/report-success.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
 /sw.js
   Cache-Control: no-cache, no-store, must-revalidate
 

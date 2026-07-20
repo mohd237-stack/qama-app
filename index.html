@@ -70,7 +70,7 @@
   </footer>
 
   <dialog id="reportDialog" class="report-dialog">
-    <form id="errorReportForm" name="error-report" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form id="errorReportForm" name="error-report" method="POST" action="/report-success.html" netlify data-netlify="true" data-netlify-honeypot="bot-field" accept-charset="UTF-8">
       <button type="button" class="dialog-close" aria-label="إغلاق" onclick="closeReportDialog()">×</button>
       <input type="hidden" name="form-name" value="error-report" />
       <input type="hidden" id="reportPage" name="page" value="" />
@@ -588,17 +588,24 @@ async function submitReport(event) {
   button.textContent = 'جارٍ الإرسال…';
   try {
     const formData = new FormData(form);
-    const response = await fetch('/', {
+    const response = await fetch('/reports.html', {
       method: 'POST',
-      headers: {'Content-Type':'application/x-www-form-urlencoded'},
-      body: new URLSearchParams(formData).toString()
+      headers: {'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
+      body: new URLSearchParams(formData).toString(),
+      credentials: 'same-origin'
     });
-    if (!response.ok) throw new Error('تعذر الإرسال');
+    if (!response.ok) throw new Error(`تعذر الإرسال (${response.status})`);
     form.reset();
     document.getElementById('reportSuccess').style.display = 'block';
-    setTimeout(closeReportDialog, 1800);
-  } catch (_) {
-    alert('تعذر إرسال الملاحظة الآن. حاول مرة أخرى بعد تحديث الصفحة.');
+    setTimeout(() => {
+      closeReportDialog();
+      window.location.reload();
+    }, 1800);
+  } catch (error) {
+    console.error('Netlify Forms submission failed:', error);
+    alert('تعذر الإرسال التلقائي. سيتم فتح صفحة الإرسال المباشر.');
+    form.removeEventListener('submit', submitReport);
+    form.submit();
   } finally {
     button.disabled = false;
     button.textContent = 'إرسال الملاحظة';

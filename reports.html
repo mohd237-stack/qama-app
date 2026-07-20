@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>إرسال ملاحظة | منصة صيف القمع</title>
+  <style>body{font-family:system-ui,Tahoma,Arial;background:#f7f4ea;color:#073b2e;margin:0;padding:24px}.box{max-width:620px;margin:auto;background:white;border:1px solid #ddd2b4;border-radius:20px;padding:22px}label{display:block;font-weight:700;margin:14px 0 6px}input,select,textarea,button{box-sizing:border-box;width:100%;font:inherit;padding:12px;border-radius:12px;border:1px solid #cfc8b7}textarea{min-height:140px}button{margin-top:18px;background:#073b2e;color:#fff;font-weight:800;cursor:pointer}.muted{color:#68736d}</style>
+</head>
+<body>
+  <main class="box">
+    <h1>الإبلاغ عن خطأ</h1>
+    <p class="muted">يمكن استخدام هذه الصفحة مباشرة عند تعذر الإرسال من النافذة داخل التطبيق.</p>
+    <form name="error-report" method="POST" action="/report-success.html" netlify data-netlify="true" data-netlify-honeypot="bot-field" accept-charset="UTF-8">
+      <input type="hidden" name="form-name" value="error-report">
+      <input type="hidden" name="page" value="https://qama1.netlify.app/">
+      <p hidden><label>لا تملأ هذا الحقل: <input name="bot-field"></label></p>
+      <label>نوع الملاحظة</label>
+      <select name="category" required><option value="">اختر النوع</option><option>نتيجة مباراة</option><option>موعد مباراة</option><option>اسم لاعب أو فريق</option><option>ترتيب أو أهداف</option><option>مشكلة فنية</option><option>أخرى</option></select>
+      <label>المباراة أو العنصر</label><input name="subject" maxlength="120">
+      <label>تفاصيل الخطأ</label><textarea name="details" maxlength="1000" required></textarea>
+      <label>الاسم — اختياري</label><input name="name" maxlength="80">
+      <label>وسيلة تواصل — اختياري</label><input name="contact" maxlength="100">
+      <button type="submit">إرسال الملاحظة</button>
+    </form>
+  </main>
+</body>
+</html>
