@@ -28,8 +28,8 @@
 
   <meta name="description" content="المنصة الإلكترونية لفعاليات ودوري صيف القمع — المباريات والنتائج والترتيب والهدافون" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
-  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" href="/icon-192.png" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
@@ -90,7 +90,7 @@
   <dialog id="summerDialog">
     <form method="dialog">
       <button class="dialog-close" aria-label="إغلاق">×</button>
-      <img class="summer-full" src="/assets/summer-qama-2026.jpg" alt="صيف القمع 2026" />
+      <img class="summer-full" src="/summer-qama-2026.jpg" alt="صيف القمع 2026" />
     </form>
   </dialog>
 
@@ -330,7 +330,7 @@ function home() {
     <button class="service-card" onclick="openReportDialog()"><span class="service-icon">✍️</span><strong>الإبلاغ عن خطأ</strong><small>إرسال الملاحظة للإدارة</small></button>
     <button class="service-card" onclick="setView('tools')"><span class="service-icon">📊</span><strong>إحصاءات وخدمات</strong><small>الزيارات والتحديثات</small></button>
   </section>
-  <section class="summer-promo" onclick="openSummerImage()"><img src="/assets/summer-qama-2026.jpg" alt="صيف القمع 2026" loading="lazy"><div><span class="eyebrow">أيقونة إضافية</span><h3>صيف القمع 2026</h3><p>اضغط لمشاهدة الهوية البصرية لصيف القمع بالحجم الكامل.</p></div></section>
+  <section class="summer-promo" onclick="openSummerImage()"><img src="/summer-qama-2026.jpg" alt="صيف القمع 2026" loading="lazy"><div><span class="eyebrow">أيقونة إضافية</span><h3>صيف القمع 2026</h3><p>اضغط لمشاهدة الهوية البصرية لصيف القمع بالحجم الكامل.</p></div></section>
   <section class="grid two" style="margin-top:16px">
     <div class="card"><h3>${esc(leagueName('juniors'))}</h3><p>${teamCountFor('juniors')} فرق — ${esc(timeFor('juniors'))}</p><button class="primary" onclick="activeLeague='juniors';setView('matches')">عرض المباريات</button></div>
     <div class="card"><h3>${esc(leagueName('seniors'))}</h3><p>${teamCountFor('seniors')} فرق — ${esc(timeFor('seniors'))}</p><button class="primary" onclick="activeLeague='seniors';setView('matches')">عرض المباريات</button></div>
@@ -565,7 +565,7 @@ function showQr() {
 function openSummerImage() {
   const dialog = document.getElementById('summerDialog');
   if (dialog?.showModal) dialog.showModal();
-  else window.open('/assets/summer-qama-2026.jpg', '_blank', 'noopener');
+  else window.open('/summer-qama-2026.jpg', '_blank', 'noopener');
 }
 
 function openReportDialog(subject = '') {
@@ -671,9 +671,9 @@ function tools() {
     <div class="visitor-box"><span>زيارات هذا الجهاز</span><strong data-local-visits>${localVisits.toLocaleString('ar-SA')}</strong><small>يُحفظ داخل المتصفح الحالي فقط</small></div>
     <div class="card"><h3>آخر تحديث للبيانات</h3><p>${loaded}</p><button class="primary" onclick="loadAllSheets(true)">تحديث الآن</button></div>
     <div class="card"><h3>تثبيت المنصة</h3><p>أضف المنصة إلى الشاشة الرئيسية لتفتح بواجهة مستقلة.</p><button class="primary" onclick="installApp()">تثبيت على الجوال</button><div class="install-note">على iPhone: مشاركة ← إضافة إلى الشاشة الرئيسية.</div></div>
-    <div id="qrSection" class="card qr-card"><h3>رمز QR للمنصة</h3><img src="/assets/qama1-qr.png" alt="رمز QR لمنصة صيف القمع"><div class="action-row"><button class="primary" onclick="shareSite()">مشاركة</button><button class="soft-button" onclick="copySiteLink()">نسخ الرابط</button></div></div>
+    <div id="qrSection" class="card qr-card"><h3>رمز QR للمنصة</h3><img src="/qama1-qr.png" alt="رمز QR لمنصة صيف القمع"><div class="action-row"><button class="primary" onclick="shareSite()">مشاركة</button><button class="soft-button" onclick="copySiteLink()">نسخ الرابط</button></div></div>
     <div class="card"><h3>الإبلاغ عن خطأ</h3><p>أرسل تصحيحًا لنتيجة أو اسم أو موعد، وتصل الرسالة إلى لوحة Netlify الخاصة بالإدارة.</p><button class="primary" onclick="openReportDialog()">فتح النموذج</button></div>
-    <div class="card full-width"><div class="summer-promo" onclick="openSummerImage()"><img src="/assets/summer-qama-2026.jpg" alt="صيف القمع 2026"><div><h3>صيف القمع 2026</h3><p>الأيقونة الإضافية والهوية البصرية المرفقة. اضغط لعرضها بالحجم الكامل.</p></div></div></div>
+    <div class="card full-width"><div class="summer-promo" onclick="openSummerImage()"><img src="/summer-qama-2026.jpg" alt="صيف القمع 2026"><div><h3>صيف القمع 2026</h3><p>الأيقونة الإضافية والهوية البصرية المرفقة. اضغط لعرضها بالحجم الكامل.</p></div></div></div>
   </section>
   <p class="tool-note">العداد الظاهر داخل الموقع تقريبي. للحصول على إحصاءات تفصيلية مثل الدول والأجهزة والصفحات، يمكن تفعيل Google Analytics مجانًا بإضافة معرّف GA4 في الكود.</p>${updateStamp()}`;
   updateVisitorElements(localVisits);

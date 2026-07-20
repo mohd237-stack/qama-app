@@ -3,10 +3,10 @@ const APP_SHELL = [
   '/',
   '/index.html',
   '/manifest.webmanifest',
-  '/assets/summer-qama-2026.jpg',
-  '/assets/qama1-qr.png',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  '/summer-qama-2026.jpg',
+  '/qama1-qr.png',
+  '/icon-192.png',
+  '/icon-512.png'
 ];
 
 self.addEventListener('install', event => {

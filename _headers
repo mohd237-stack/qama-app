@@ -5,8 +5,8 @@
   Content-Type: application/manifest+json
   Cache-Control: public, max-age=3600
 
-/assets/*
+/*.png
   Cache-Control: public, max-age=604800
 
-/icons/*
+/*.jpg
   Cache-Control: public, max-age=604800
