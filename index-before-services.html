@@ -19,17 +19,7 @@
 .player-photo{width:38px;height:38px;border-radius:50%;object-fit:cover}.player em{margin-inline-start:auto;color:var(--green2);font-style:normal;font-size:.85rem}.team-main-cover{height:260px}.button-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:10px 16px;border-radius:12px}.button-link.primary{background:var(--green);color:#fff}
 @media(max-width:620px){.match{grid-template-columns:82px 1fr auto}.match-image{display:none}.event-grid{grid-template-columns:1fr}.sync-line{font-size:.8rem}}
 
-
-/* إضافات خدمات المنصة */
-.next-match-panel{margin-top:16px;background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;border-radius:22px;padding:18px;box-shadow:0 14px 34px rgba(7,59,46,.17);overflow:hidden;position:relative}.next-match-panel:after{content:"";position:absolute;inset:auto -60px -90px auto;width:190px;height:190px;border-radius:50%;background:rgba(200,148,29,.16)}.next-match-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.next-match-head h3{margin:0}.next-match-head span{background:rgba(255,255,255,.14);padding:7px 11px;border-radius:999px}.next-teams{font-size:1.25rem;font-weight:800;margin:16px 0 10px}.countdown{display:grid;grid-template-columns:repeat(4,minmax(58px,1fr));gap:8px;max-width:520px}.countdown div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:10px;text-align:center;border-radius:14px}.countdown strong{display:block;font-size:1.35rem;color:#ffe2a0}.countdown small{font-size:.75rem}.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin-top:16px}.service-card{border:1px solid #dfd4b4;background:#fff;border-radius:18px;padding:16px;text-align:center;cursor:pointer;transition:.18s;min-height:128px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px}.service-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(7,59,46,.09)}.service-card .service-icon{font-size:2rem;line-height:1}.service-card strong{color:var(--green)}.service-card small{color:#69766f}.summer-promo{margin-top:16px;display:grid;grid-template-columns:minmax(170px,260px) 1fr;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:14px;cursor:pointer}.summer-promo img{width:100%;max-height:280px;object-fit:cover;border-radius:16px}.summer-promo h3{font-size:1.45rem;margin:0 0 8px;color:var(--green)}.summer-full{display:block;width:min(760px,100%);margin:auto;border-radius:22px;box-shadow:0 16px 45px rgba(0,0,0,.15)}.tools-hero{background:linear-gradient(135deg,#073b2e,#0d5a43);color:#fff;border-radius:22px;padding:20px;margin-bottom:16px}.tools-hero h2{margin:0 0 8px}.visitor-box{background:linear-gradient(145deg,#fff,#f7f1df);border:1px solid #ead8a7;border-radius:18px;padding:18px;text-align:center}.visitor-box strong{display:block;font-size:2rem;color:var(--green)}.qr-card img{width:min(260px,80%);display:block;margin:12px auto;border-radius:14px;border:8px solid #fff;box-shadow:0 8px 22px rgba(0,0,0,.08)}.action-row{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}.action-row button{min-width:130px}.install-note{font-size:.85rem;color:#65726c;margin-top:8px}.report-dialog{max-width:620px}.report-dialog h2{margin-top:0;color:var(--green)}.report-dialog .field label{font-weight:700;color:var(--green)}.report-success{display:none;background:#e9f7ef;color:#175c36;border:1px solid #b7e2c8;border-radius:12px;padding:12px;margin-top:12px}.footer-metrics{display:flex;gap:14px;flex-wrap:wrap}.footer-metrics span{opacity:.95}.online-status{display:inline-flex;align-items:center;gap:6px}.online-dot{width:8px;height:8px;border-radius:50%;background:#45d483;box-shadow:0 0 0 4px rgba(69,212,131,.15)}.offline .online-dot{background:#d08b42}.tool-note{background:#fff7dd;border:1px solid #ecd691;padding:12px;border-radius:14px;color:#71540a}.full-width{grid-column:1/-1}.soft-button{background:#fff;border:1px solid var(--line);color:var(--green);font-weight:700}.update-card{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:#eef5f2;border:1px solid #cfdfd8;border-radius:16px;padding:13px;margin-top:12px}.update-card strong{color:var(--green)}
-@media(max-width:700px){.summer-promo{grid-template-columns:110px 1fr}.summer-promo img{height:170px}.summer-promo h3{font-size:1.12rem}.countdown{grid-template-columns:repeat(4,1fr)}.countdown div{padding:8px 4px}.countdown strong{font-size:1.05rem}.service-grid{grid-template-columns:repeat(2,1fr)}}
-
 </style>
-
-  <meta name="description" content="المنصة الإلكترونية لفعاليات ودوري صيف القمع — المباريات والنتائج والترتيب والهدافون" />
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
-  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
@@ -55,7 +45,6 @@
     <button class="tab" data-view="scorers">الهدافون</button>
     <button class="tab" data-view="teams">الفرق</button>
     <button class="tab" data-view="events">الفعاليات</button>
-    <button class="tab" data-view="tools">الخدمات</button>
     <button class="tab" data-view="admin">الإدارة</button>
   </nav>
 
@@ -63,45 +52,13 @@
 
   <footer>
     <span>مركز القمع الاجتماعي</span>
-    <div class="footer-metrics">
-      <span id="visitorCount">جاري قراءة عداد الزيارات…</span>
-      <span id="connectionStatus" class="online-status"><i class="online-dot"></i>متصل</span>
-    </div>
+    <span id="visitorCount">الزيارات على هذا الجهاز: 1</span>
   </footer>
-
-  <dialog id="reportDialog" class="report-dialog">
-    <form id="errorReportForm" name="error-report" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-      <button type="button" class="dialog-close" aria-label="إغلاق" onclick="closeReportDialog()">×</button>
-      <input type="hidden" name="form-name" value="error-report" />
-      <input type="hidden" id="reportPage" name="page" value="" />
-      <p hidden><label>لا تملأ هذا الحقل: <input name="bot-field" /></label></p>
-      <h2>الإبلاغ عن خطأ</h2>
-      <p class="muted">أرسل ملاحظة عن نتيجة أو اسم لاعب أو موعد، وستصل مباشرة إلى إدارة المنصة.</p>
-      <div class="field"><label for="reportCategory">نوع الملاحظة</label><select id="reportCategory" name="category" required><option value="">اختر النوع</option><option>نتيجة مباراة</option><option>موعد مباراة</option><option>اسم لاعب أو فريق</option><option>ترتيب أو أهداف</option><option>مشكلة فنية</option><option>أخرى</option></select></div>
-      <div class="field"><label for="reportSubject">المباراة أو العنصر</label><input id="reportSubject" name="subject" maxlength="120" placeholder="مثال: مباراة الفرسان والأبطال" /></div>
-      <div class="field"><label for="reportDetails">تفاصيل الخطأ</label><textarea id="reportDetails" name="details" required maxlength="1000" placeholder="اكتب المعلومة الصحيحة بوضوح"></textarea></div>
-      <div class="field"><label for="reportName">الاسم — اختياري</label><input id="reportName" name="name" maxlength="80" /></div>
-      <div class="field"><label for="reportContact">وسيلة تواصل — اختياري</label><input id="reportContact" name="contact" maxlength="100" placeholder="رقم أو بريد إلكتروني" /></div>
-      <div class="dialog-actions"><button type="button" class="soft-button" onclick="closeReportDialog()">إلغاء</button><button id="reportSubmit" type="submit" class="primary">إرسال الملاحظة</button></div>
-      <div id="reportSuccess" class="report-success">تم إرسال الملاحظة إلى إدارة المنصة. شكرًا لك.</div>
-    </form>
-  </dialog>
-
-  <dialog id="summerDialog">
-    <form method="dialog">
-      <button class="dialog-close" aria-label="إغلاق">×</button>
-      <img class="summer-full" src="/assets/summer-qama-2026.jpg" alt="صيف القمع 2026" />
-    </form>
-  </dialog>
-
 <script>
 const SHEET_ID = '1qxyD1VMoFi4FM9WANLqc8x2vsvIL170a';
 const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`;
 const ADMIN_PASSWORD = 'alqma160160@';
 const REFRESH_INTERVAL = 5 * 60 * 1000;
-const SITE_URL = 'https://qama1.netlify.app';
-const COUNTER_ENDPOINT = 'https://api.counterapi.dev/v1/qama1-netlify-platform/visits';
-const GA_MEASUREMENT_ID = ''; // ضع رقم GA4 هنا لاحقًا مثل G-XXXXXXXXXX
 
 const SHEETS = {
   main: 'الرئيسية',
@@ -120,8 +77,6 @@ const STATE = {
   events: [],
   players: [],
   loadedAt: null,
-  visitorCount: null,
-  visitorToday: null,
   error: null
 };
 
@@ -248,7 +203,7 @@ function setView(view) {
 }
 
 function renderActiveView() {
-  const views = { home, matches, standings, scorers, teams, events, tools, admin: adminView };
+  const views = { home, matches, standings, scorers, teams, events, admin: adminView };
   (views[activeView] || home)();
 }
 
@@ -261,8 +216,7 @@ function switcher() {
 
 function updateStamp() {
   if (!STATE.loadedAt) return '';
-  const formatted = STATE.loadedAt.toLocaleString('ar-SA', {timeZone:'Asia/Riyadh', weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'});
-  return `<div class="update-card"><span><strong>آخر مزامنة للبيانات:</strong> ${formatted}</span><button class="soft-button" onclick="loadAllSheets(true)">تحديث الآن</button></div>`;
+  return `<div class="sync-line">آخر قراءة للبيانات: ${STATE.loadedAt.toLocaleTimeString('ar-SA', {hour:'2-digit', minute:'2-digit'})}<button onclick="loadAllSheets(true)">تحديث الآن</button></div>`;
 }
 
 function filteredMatches() {
@@ -305,13 +259,6 @@ function home() {
   const totalGoals = aggregatedScorersForAll().reduce((sum, item) => sum + item.goals, 0);
   const title = text(STATE.main['اسم_البطولة']) || 'بطولة محمد بن أحمد الهلال أبو سالم';
   const description = text(STATE.main['وصف_الرئيسية']) || 'كل النتائج والترتيب في مكان واحد';
-  const next = nextScheduledMatch();
-
-  const nextHtml = next ? `<section class="next-match-panel">
-    <div class="next-match-head"><h3>المباراة القادمة</h3><span>${esc(next.row['الدوري'])} — ${esc(next.row['التاريخ'])} — ${esc(next.row['الوقت'])}</span></div>
-    <div class="next-teams">${esc(next.row['الفريق_الأول'])} <small>ضد</small> ${esc(next.row['الفريق_الثاني'])}</div>
-    <div id="nextCountdown" class="countdown" data-time="${next.date.toISOString()}">${countdownMarkup(next.date)}</div>
-  </section>` : `<section class="next-match-panel"><div class="next-match-head"><h3>المباراة القادمة</h3></div><p>لا توجد مباراة قادمة مسجلة حاليًا.</p></section>`;
 
   app.innerHTML = `<section class="card banner"><div><span class="eyebrow">بطولة تفاعلية</span><h2>${esc(title)}</h2><p>${esc(description)}</p></div></section>
   <section class="stats">
@@ -321,21 +268,10 @@ function home() {
     <div class="stat"><strong>${playedCount}</strong>نتيجة مدخلة</div>
     <div class="stat"><strong>${totalGoals}</strong>هدفًا</div>
   </section>
-  ${nextHtml}
-  <section class="service-grid" aria-label="الخدمات السريعة">
-    <button class="service-card" onclick="shareSite()"><span class="service-icon">↗️</span><strong>مشاركة المنصة</strong><small>واتساب أو تطبيقات الجوال</small></button>
-    <button class="service-card" onclick="copySiteLink()"><span class="service-icon">🔗</span><strong>نسخ الرابط</strong><small>نسخ رابط المنصة مباشرة</small></button>
-    <button class="service-card" onclick="showQr()"><span class="service-icon">▦</span><strong>رمز QR</strong><small>فتح المنصة بالكاميرا</small></button>
-    <button class="service-card" onclick="installApp()"><span class="service-icon">📲</span><strong>تثبيت على الجوال</strong><small>واجهة تشبه التطبيق</small></button>
-    <button class="service-card" onclick="openReportDialog()"><span class="service-icon">✍️</span><strong>الإبلاغ عن خطأ</strong><small>إرسال الملاحظة للإدارة</small></button>
-    <button class="service-card" onclick="setView('tools')"><span class="service-icon">📊</span><strong>إحصاءات وخدمات</strong><small>الزيارات والتحديثات</small></button>
-  </section>
-  <section class="summer-promo" onclick="openSummerImage()"><img src="/assets/summer-qama-2026.jpg" alt="صيف القمع 2026" loading="lazy"><div><span class="eyebrow">أيقونة إضافية</span><h3>صيف القمع 2026</h3><p>اضغط لمشاهدة الهوية البصرية لصيف القمع بالحجم الكامل.</p></div></section>
   <section class="grid two" style="margin-top:16px">
     <div class="card"><h3>${esc(leagueName('juniors'))}</h3><p>${teamCountFor('juniors')} فرق — ${esc(timeFor('juniors'))}</p><button class="primary" onclick="activeLeague='juniors';setView('matches')">عرض المباريات</button></div>
     <div class="card"><h3>${esc(leagueName('seniors'))}</h3><p>${teamCountFor('seniors')} فرق — ${esc(timeFor('seniors'))}</p><button class="primary" onclick="activeLeague='seniors';setView('matches')">عرض المباريات</button></div>
   </section>${updateStamp()}`;
-  updateCountdownDom();
 }
 
 function aggregatedScorersForAll() {
@@ -442,262 +378,6 @@ function escapeJs(value) {
   return String(value).replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\r?\n/g, ' ');
 }
 
-
-const hijriDateCache = new Map();
-let deferredInstallPrompt = null;
-
-function normalizeDigits(value) {
-  return String(value ?? '').replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d));
-}
-
-function hijriPartsFor(date) {
-  try {
-    const formatter = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura', {timeZone:'Asia/Riyadh', year:'numeric', month:'numeric', day:'numeric'});
-    const parts = Object.fromEntries(formatter.formatToParts(date).map(part => [part.type, part.value]));
-    return [Number(parts.year), Number(parts.month), Number(parts.day)];
-  } catch (_) {
-    return null;
-  }
-}
-
-function gregorianForHijri(hijriText) {
-  const normalized = normalizeDigits(hijriText).replace(/\s/g, '');
-  if (hijriDateCache.has(normalized)) return hijriDateCache.get(normalized);
-  const match = normalized.match(/(\d{4})[\/-](\d{1,2})[\/-](\d{1,2})/);
-  if (!match) return null;
-  const target = match.slice(1).map(Number);
-  let found = null;
-  try {
-    for (let stamp = Date.UTC(2025, 0, 1, 12); stamp <= Date.UTC(2028, 11, 31, 12); stamp += 86400000) {
-      const candidate = new Date(stamp);
-      const parts = hijriPartsFor(candidate);
-      if (parts && parts[0] === target[0] && parts[1] === target[1] && parts[2] === target[2]) {
-        found = candidate;
-        break;
-      }
-    }
-  } catch (_) {}
-  if (!found && target[0] === 1448 && target[1] === 2) {
-    found = new Date(Date.UTC(2026, 6, target[2] + 13, 12));
-  }
-  hijriDateCache.set(normalized, found);
-  return found;
-}
-
-function timeParts(timeText) {
-  const value = normalizeDigits(timeText);
-  const match = value.match(/(\d{1,2})(?::(\d{2}))?/);
-  if (!match) return {hour: 20, minute: 0};
-  let hour = Number(match[1]);
-  const minute = Number(match[2] || 0);
-  if (/مساء|PM/i.test(value) && hour < 12) hour += 12;
-  if (/صباح|AM/i.test(value) && hour === 12) hour = 0;
-  return {hour, minute};
-}
-
-function matchDateTime(row) {
-  const day = gregorianForHijri(row['التاريخ']);
-  if (!day) return null;
-  const {hour, minute} = timeParts(row['الوقت']);
-  const y = day.getUTCFullYear();
-  const m = String(day.getUTCMonth() + 1).padStart(2, '0');
-  const d = String(day.getUTCDate()).padStart(2, '0');
-  return new Date(`${y}-${m}-${d}T${String(hour).padStart(2,'0')}:${String(minute).padStart(2,'0')}:00+03:00`);
-}
-
-function nextScheduledMatch() {
-  const now = new Date();
-  return STATE.matches
-    .filter(row => text(row['المرحلة']) !== 'راحة' && text(row['الفريق_الأول']) && text(row['الفريق_الثاني']))
-    .filter(row => !(hasValue(row['أهداف_الأول']) && hasValue(row['أهداف_الثاني'])))
-    .map(row => ({row, date: matchDateTime(row)}))
-    .filter(item => item.date && item.date.getTime() > now.getTime())
-    .sort((a, b) => a.date - b.date)[0] || null;
-}
-
-function countdownMarkup(target) {
-  const diff = Math.max(0, target.getTime() - Date.now());
-  const days = Math.floor(diff / 86400000);
-  const hours = Math.floor(diff / 3600000) % 24;
-  const minutes = Math.floor(diff / 60000) % 60;
-  const seconds = Math.floor(diff / 1000) % 60;
-  return `<div><strong>${days}</strong><small>يوم</small></div><div><strong>${hours}</strong><small>ساعة</small></div><div><strong>${minutes}</strong><small>دقيقة</small></div><div><strong>${seconds}</strong><small>ثانية</small></div>`;
-}
-
-function updateCountdownDom() {
-  const element = document.getElementById('nextCountdown');
-  if (!element) return;
-  const target = new Date(element.dataset.time);
-  if (!Number.isFinite(target.getTime())) return;
-  element.innerHTML = countdownMarkup(target);
-}
-
-async function shareSite() {
-  const data = {title:'منصة صيف القمع', text:'تابع مباريات ونتائج وترتيب وهدافي صيف القمع', url:SITE_URL};
-  try {
-    if (navigator.share) await navigator.share(data);
-    else await copySiteLink();
-  } catch (error) {
-    if (error?.name !== 'AbortError') await copySiteLink();
-  }
-}
-
-async function copySiteLink() {
-  try {
-    await navigator.clipboard.writeText(SITE_URL);
-    alert('تم نسخ رابط المنصة');
-  } catch (_) {
-    const input = document.createElement('input');
-    input.value = SITE_URL;
-    document.body.appendChild(input);
-    input.select();
-    document.execCommand('copy');
-    input.remove();
-    alert('تم نسخ رابط المنصة');
-  }
-}
-
-function showQr() {
-  setView('tools');
-  setTimeout(() => document.getElementById('qrSection')?.scrollIntoView({behavior:'smooth', block:'center'}), 80);
-}
-
-function openSummerImage() {
-  const dialog = document.getElementById('summerDialog');
-  if (dialog?.showModal) dialog.showModal();
-  else window.open('/assets/summer-qama-2026.jpg', '_blank', 'noopener');
-}
-
-function openReportDialog(subject = '') {
-  const dialog = document.getElementById('reportDialog');
-  document.getElementById('reportPage').value = location.href;
-  document.getElementById('reportSubject').value = subject;
-  document.getElementById('reportSuccess').style.display = 'none';
-  if (dialog?.showModal) dialog.showModal();
-}
-
-function closeReportDialog() {
-  document.getElementById('reportDialog')?.close();
-}
-
-async function submitReport(event) {
-  event.preventDefault();
-  const form = event.currentTarget;
-  const button = document.getElementById('reportSubmit');
-  button.disabled = true;
-  button.textContent = 'جارٍ الإرسال…';
-  try {
-    const formData = new FormData(form);
-    const response = await fetch('/', {
-      method: 'POST',
-      headers: {'Content-Type':'application/x-www-form-urlencoded'},
-      body: new URLSearchParams(formData).toString()
-    });
-    if (!response.ok) throw new Error('تعذر الإرسال');
-    form.reset();
-    document.getElementById('reportSuccess').style.display = 'block';
-    setTimeout(closeReportDialog, 1800);
-  } catch (_) {
-    alert('تعذر إرسال الملاحظة الآن. حاول مرة أخرى بعد تحديث الصفحة.');
-  } finally {
-    button.disabled = false;
-    button.textContent = 'إرسال الملاحظة';
-  }
-}
-
-function extractCounterValue(payload) {
-  const candidates = [payload?.value, payload?.count, payload?.up_count, payload?.data?.up_count, payload?.data?.count, payload?.data?.value];
-  for (const value of candidates) {
-    const parsed = Number(value);
-    if (Number.isFinite(parsed)) return parsed;
-  }
-  return null;
-}
-
-function storageGet(key, fallback = null) {
-  try { return localStorage.getItem(key) ?? fallback; } catch (_) { return fallback; }
-}
-
-function storageSet(key, value) {
-  try { localStorage.setItem(key, String(value)); return true; } catch (_) { return false; }
-}
-
-async function initVisitorCounter() {
-  const localVisits = Number(storageGet('qimma-visits', '0')) + 1;
-  storageSet('qimma-visits', localVisits);
-  const today = new Date().toISOString().slice(0, 10);
-  const dailyKey = `qama-counter-${today}`;
-  const shouldIncrement = !storageGet(dailyKey);
-  try {
-    const endpoint = shouldIncrement ? `${COUNTER_ENDPOINT}/up` : COUNTER_ENDPOINT;
-    const response = await fetch(endpoint, {cache:'no-store', credentials:'omit'});
-    if (!response.ok) throw new Error('counter unavailable');
-    const payload = await response.json();
-    const count = extractCounterValue(payload);
-    if (shouldIncrement) storageSet(dailyKey, '1');
-    if (count !== null) STATE.visitorCount = count;
-  } catch (_) {
-    STATE.visitorCount = null;
-  }
-  updateVisitorElements(localVisits);
-}
-
-function updateVisitorElements(localVisits = Number(storageGet('qimma-visits', '1'))) {
-  const footer = document.getElementById('visitorCount');
-  const totalText = STATE.visitorCount !== null ? `إجمالي زيارات تقريبي: ${STATE.visitorCount.toLocaleString('ar-SA')}` : `زيارات هذا الجهاز: ${localVisits.toLocaleString('ar-SA')}`;
-  if (footer) footer.textContent = totalText;
-  document.querySelectorAll('[data-visitor-total]').forEach(el => el.textContent = STATE.visitorCount !== null ? STATE.visitorCount.toLocaleString('ar-SA') : '—');
-  document.querySelectorAll('[data-local-visits]').forEach(el => el.textContent = localVisits.toLocaleString('ar-SA'));
-}
-
-function initAnalytics() {
-  if (!/^G-[A-Z0-9]+$/i.test(GA_MEASUREMENT_ID)) return;
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-  document.head.appendChild(script);
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){dataLayer.push(arguments)};
-  gtag('js', new Date());
-  gtag('config', GA_MEASUREMENT_ID);
-}
-
-function tools() {
-  const localVisits = Number(storageGet('qimma-visits', '1'));
-  const loaded = STATE.loadedAt ? STATE.loadedAt.toLocaleString('ar-SA', {timeZone:'Asia/Riyadh', dateStyle:'medium', timeStyle:'short'}) : 'لم تتم المزامنة بعد';
-  app.innerHTML = `<section class="tools-hero"><h2>خدمات المنصة</h2><p>مشاركة وتثبيت ورمز QR وإبلاغ عن الأخطاء، مع معلومات التحديث والزيارات.</p></section>
-  <section class="grid two">
-    <div class="visitor-box"><span>إجمالي الزيارات التقريبي</span><strong data-visitor-total>${STATE.visitorCount !== null ? STATE.visitorCount.toLocaleString('ar-SA') : '—'}</strong><small>عداد مجاني تقريبي وقد يتأخر عند الضغط الكبير</small></div>
-    <div class="visitor-box"><span>زيارات هذا الجهاز</span><strong data-local-visits>${localVisits.toLocaleString('ar-SA')}</strong><small>يُحفظ داخل المتصفح الحالي فقط</small></div>
-    <div class="card"><h3>آخر تحديث للبيانات</h3><p>${loaded}</p><button class="primary" onclick="loadAllSheets(true)">تحديث الآن</button></div>
-    <div class="card"><h3>تثبيت المنصة</h3><p>أضف المنصة إلى الشاشة الرئيسية لتفتح بواجهة مستقلة.</p><button class="primary" onclick="installApp()">تثبيت على الجوال</button><div class="install-note">على iPhone: مشاركة ← إضافة إلى الشاشة الرئيسية.</div></div>
-    <div id="qrSection" class="card qr-card"><h3>رمز QR للمنصة</h3><img src="/assets/qama1-qr.png" alt="رمز QR لمنصة صيف القمع"><div class="action-row"><button class="primary" onclick="shareSite()">مشاركة</button><button class="soft-button" onclick="copySiteLink()">نسخ الرابط</button></div></div>
-    <div class="card"><h3>الإبلاغ عن خطأ</h3><p>أرسل تصحيحًا لنتيجة أو اسم أو موعد، وتصل الرسالة إلى لوحة Netlify الخاصة بالإدارة.</p><button class="primary" onclick="openReportDialog()">فتح النموذج</button></div>
-    <div class="card full-width"><div class="summer-promo" onclick="openSummerImage()"><img src="/assets/summer-qama-2026.jpg" alt="صيف القمع 2026"><div><h3>صيف القمع 2026</h3><p>الأيقونة الإضافية والهوية البصرية المرفقة. اضغط لعرضها بالحجم الكامل.</p></div></div></div>
-  </section>
-  <p class="tool-note">العداد الظاهر داخل الموقع تقريبي. للحصول على إحصاءات تفصيلية مثل الدول والأجهزة والصفحات، يمكن تفعيل Google Analytics مجانًا بإضافة معرّف GA4 في الكود.</p>${updateStamp()}`;
-  updateVisitorElements(localVisits);
-}
-
-async function installApp() {
-  if (deferredInstallPrompt) {
-    deferredInstallPrompt.prompt();
-    await deferredInstallPrompt.userChoice;
-    deferredInstallPrompt = null;
-    return;
-  }
-  const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
-  if (isIOS) alert('لتثبيت المنصة على iPhone: اضغط زر المشاركة في Safari ثم اختر «إضافة إلى الشاشة الرئيسية».');
-  else alert('افتح قائمة المتصفح واختر «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية».');
-}
-
-function updateConnectionStatus() {
-  const element = document.getElementById('connectionStatus');
-  if (!element) return;
-  element.classList.toggle('offline', !navigator.onLine);
-  element.lastChild.textContent = navigator.onLine ? 'متصل' : 'غير متصل';
-}
-
 function adminView() {
   if (!admin) {
     app.innerHTML = `<div class="card login"><h2>دخول المسؤول</h2><p>بعد الدخول سيتم فتح لوحة التحكم في Google Sheets. صلاحية التعديل يحميها حساب Google الخاص بك.</p><input id="pin" type="password" autocomplete="current-password" placeholder="كلمة المرور"><button class="primary" onclick="login()">دخول</button></div>`;
@@ -706,8 +386,6 @@ function adminView() {
   app.innerHTML = `<div class="card"><h2>لوحة الإدارة</h2><p class="success">تعديل النتائج والهدافين واللاعبين يتم من جدول Google، ويظهر للزوار بعد الحفظ وتحديث الموقع.</p><div class="admin-grid">
     <div class="admin-card"><h3>فتح جدول Google</h3><p>استخدم أوراق المباريات، الهدافين، اللاعبين، الفعاليات، والترتيب.</p><a class="button-link primary" href="${SHEET_URL}" target="_blank" rel="noopener">فتح لوحة التحكم</a></div>
     <div class="admin-card"><h3>تحديث الموقع</h3><p>اقرأ آخر البيانات المحفوظة من الجدول الآن.</p><button class="primary" onclick="loadAllSheets(true)">تحديث البيانات</button></div>
-    <div class="admin-card"><h3>بلاغات الأخطاء</h3><p>تظهر رسائل الزوار في Netlify داخل Forms ثم error-report.</p><button class="soft-button" onclick="openReportDialog('اختبار نموذج الإدارة')">اختبار النموذج</button></div>
-    <div class="admin-card"><h3>إحصاءات الزيارات</h3><p>العداد العام داخل الموقع تقريبي. الإحصاءات التفصيلية تُفعل بإضافة معرّف Google Analytics المجاني.</p><button class="soft-button" onclick="setView('tools')">عرض الخدمات</button></div>
   </div><div class="admin-toolbar"><button onclick="admin=false;adminView()">تسجيل الخروج</button></div></div>`;
 }
 
@@ -725,24 +403,12 @@ document.querySelectorAll('.tab').forEach(button => {
   button.addEventListener('click', () => setView(button.dataset.view));
 });
 
-document.getElementById('errorReportForm')?.addEventListener('submit', submitReport);
-window.addEventListener('beforeinstallprompt', event => {
-  event.preventDefault();
-  deferredInstallPrompt = event;
-});
-window.addEventListener('online', updateConnectionStatus);
-window.addEventListener('offline', updateConnectionStatus);
+let visits = Number(localStorage.getItem('qimma-visits') || 0) + 1;
+localStorage.setItem('qimma-visits', String(visits));
+document.getElementById('visitorCount').textContent = `الزيارات على هذا الجهاز: ${visits}`;
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(console.warn));
-}
-
-initAnalytics();
-initVisitorCounter();
-updateConnectionStatus();
 loadAllSheets(true);
 setInterval(() => loadAllSheets(false), REFRESH_INTERVAL);
-setInterval(updateCountdownDom, 1000);
 </script>
 </body>
 </html>
