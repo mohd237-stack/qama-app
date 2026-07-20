@@ -70,7 +70,7 @@
   </footer>
 
   <dialog id="reportDialog" class="report-dialog">
-    <form id="errorReportForm" name="error-report" method="POST" action="/report-success.html" netlify data-netlify="true" data-netlify-honeypot="bot-field" accept-charset="UTF-8">
+    <form id="errorReportForm" name="error-report" method="POST" action="/report-success.html" data-netlify="true" netlify-honeypot="bot-field">
       <button type="button" class="dialog-close" aria-label="إغلاق" onclick="closeReportDialog()">×</button>
       <input type="hidden" name="form-name" value="error-report" />
       <input type="hidden" id="reportPage" name="page" value="" />
@@ -588,24 +588,17 @@ async function submitReport(event) {
   button.textContent = 'جارٍ الإرسال…';
   try {
     const formData = new FormData(form);
-    const response = await fetch('/reports.html', {
+    const response = await fetch('/', {
       method: 'POST',
-      headers: {'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
-      body: new URLSearchParams(formData).toString(),
-      credentials: 'same-origin'
+      headers: {'Content-Type':'application/x-www-form-urlencoded'},
+      body: new URLSearchParams(formData).toString()
     });
-    if (!response.ok) throw new Error(`تعذر الإرسال (${response.status})`);
+    if (!response.ok) throw new Error('تعذر الإرسال');
     form.reset();
     document.getElementById('reportSuccess').style.display = 'block';
-    setTimeout(() => {
-      closeReportDialog();
-      window.location.reload();
-    }, 1800);
-  } catch (error) {
-    console.error('Netlify Forms submission failed:', error);
-    alert('تعذر الإرسال التلقائي. سيتم فتح صفحة الإرسال المباشر.');
-    form.removeEventListener('submit', submitReport);
-    form.submit();
+    setTimeout(closeReportDialog, 1800);
+  } catch (_) {
+    alert('تعذر إرسال الملاحظة الآن. حاول مرة أخرى بعد تحديث الصفحة.');
   } finally {
     button.disabled = false;
     button.textContent = 'إرسال الملاحظة';
@@ -732,7 +725,7 @@ document.querySelectorAll('.tab').forEach(button => {
   button.addEventListener('click', () => setView(button.dataset.view));
 });
 
-document.getElementById('errorReportForm')?.addEventListener('submit', submitReport);
+// الإرسال يتم مباشرة عبر Netlify Forms لضمان التوافق على الجوال.
 window.addEventListener('beforeinstallprompt', event => {
   event.preventDefault();
   deferredInstallPrompt = event;

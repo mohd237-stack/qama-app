@@ -1,4 +1,4 @@
-const CACHE_NAME = 'qama1-platform-v4';
+const CACHE_NAME = 'qama1-platform-v6';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -6,9 +6,7 @@ const APP_SHELL = [
   '/summer-qama-2026.jpg',
   '/qama1-qr.png',
   '/icon-192.png',
-  '/icon-512.png',
-  '/reports.html',
-  '/report-success.html'
+  '/icon-512.png'
 ];
 
 self.addEventListener('install', event => {
